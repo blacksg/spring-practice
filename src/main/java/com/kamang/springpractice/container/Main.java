@@ -5,11 +5,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(AppConfig.class);
+        context.register(ConfigA.class);
         context.refresh();
         
-        BeanExample beanExample = context.getBean(BeanExample.class);
-        beanExample.doSomething();
+        BeanB beabB = context.getBean("beanB", BeanB.class);
+        beabB.doSomething();
         
         context.close();
     }

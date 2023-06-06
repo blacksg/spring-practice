@@ -4,10 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class AppConfig {
+public class ConfigB {
     
     @Bean
-    BeanExample beanExample() {
-        return new BeanExample();
+    public BeanB beanB() {
+        return new BeanB();
     }
 }
